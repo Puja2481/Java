@@ -1,0 +1,23 @@
+Precedence and associative rules are used when dealing with hybrid equations involving more than one type of operator. 
+In such cases, these rules determine which part of the equation to consider first as there can be many different valuations 
+for the same equation. The below table depicts the precedence of operators in decreasing order as magnitude with the top representing
+the highest precedence and the bottom shows the lowest precedence.
+
+_______________________________________________________________________
+| Operators	          |     Associativity	|   Type                  |
+| ____________________|_____________________|_________________________|
+| ++,--	              |     Right to Left	|   Unary Postfix         |
+| ++,--,+,-,!	      |     Right to Left	|   Unary Prefix          |
+| /,*,%	              |     Left to Right	|   Multiplicative        |
+| +,-	              |     Left to Right	|   Additive              |
+| <,<=,>,>=	          |     Left to Right	|   Relational            |
+| ==,!=	              |     Left to Right	|   Equality              |
+| /,*,%	              |     Left to Right	|   Multiplicative        |
+| &	                  |     Left to Right	|   Boolean Logical AND   |
+| ^	                  |     Left to Right	|   Boolean Logical XOR   |
+| |	                  |     Left to Right	|   Boolean Logical OR    |
+| &&	              |     Left to Right	|   Conditional AND       |
+| ||	              |     Left to Right	|   Conditional OR        |
+| ?:	              |     Right to Left	|   Conditional           |
+| =,+=,-=,*=,/=,%=	  |     Right to Left	|   Assignment            |
+|_____________________________________________________________________|
